@@ -21,6 +21,7 @@
     "url": "https://github.com/jmspring/sbusamqpex/issues"
   },
   "dependencies": {
-    "node-qpid": "git://github.com/jmspring/node-qpid#1a8982b"
+    "node-qpid": "git://github.com/jmspring/node-qpid#1a8982b",
+    "minimist": "*"
   }
 }
