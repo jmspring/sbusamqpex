@@ -25,7 +25,8 @@ if('s' in argv) {
   message = argv['m'];
 }
 
-var address = "amqps://" + name + ":" + key + "@" + ns + "/" + queue;
+var address = "amqps://" + encodeURIComponent(name) + ":" + encodeURIComponent(key) + "@" + ns + "/" + queue;
+console.log("Connecting to: " + address);
 var m = new Messenger();
 m.on('error', function(err) {
   console.log("Error: " + err.message);
